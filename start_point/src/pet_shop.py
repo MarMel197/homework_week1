@@ -1,4 +1,4 @@
-# WRITE YOUR FUNCTIONS HERE
+import pdb
 
 # Test 1:Get petshop name
 def get_pet_shop_name(list):
@@ -6,26 +6,40 @@ def get_pet_shop_name(list):
 
 # Test 2: Get total cash 
 def get_total_cash(list):
-    total_cash = 0
-    for sold in list():
-        total_cash += sold["cash"]
-    return total_cash
+    return list["admin"]["total_cash"]
 
 # Test 3 and 4: Add or remove cash 
-def add_or_remove_cash(list, cash):
-    total_cash = list["total_cash"]
-    if cash >= 0:
-        total_cash += cash
-    elif cash < 0:
-        total_cash -= cash
-    else:
-        total_cash = total_cash
-    return total_cash
+# def add_or_remove_cash(list, cash):
+#     total_cash = list["admin"]["total_cash"]
+#     total_cash += cash
+#     list["admin"]["total_cash"] = total_cash
 
 # Test 5: Get pets sold
 def get_pets_sold(list):
-    sold_pets = []
-    for sales in list:
-        sold_pets = sales["name"]
-    return sold_pets
+    return list["admin"]["pets_sold"]
 
+# Test 6: Increase pets sold
+def increase_pets_sold(list, sale):
+    total_sales = list["admin"]["pets_sold"]
+    total_sales += sale
+    list["admin"]["pets_sold"] = total_sales
+
+# Test 7: Get stock count
+def get_stock_count(list):
+    return len(list["pets"])
+
+# Test 8 & 9 : Get pets by breed
+def get_pets_by_breed(list, breed):
+    breed_list = []
+    for pet in list["pets"]:
+        if pet["breed"] == breed:
+            breed_list.append(["breed"])
+    
+    return breed_list
+
+# Test 10 & 11: Find pet by name
+
+def find_pet_by_name(list, pet_name):
+    for name in list["pets"]:
+        if name["name"] == pet_name:
+            return pet_name
