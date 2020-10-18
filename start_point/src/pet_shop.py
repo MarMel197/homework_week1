@@ -69,15 +69,14 @@ def remove_customer_cash(list, cash_sale):
 
 #Test 15: Get customer pet count
 
-def get_customer_pet_count(list, customer):
-    pet_count = list[customer]["pets"]
-    return pet_count
+def get_customer_pet_count(customer):
+    cust_pet_count = len(customer["pets"])
+    return cust_pet_count
 
 # Test 16: Add pet to customer
 
-def add_pet_to_customer(list, customer, pet):
-    list[customer]["pets"].append(pet)
-    
+def add_pet_to_customer(customer, new_pet):
+    customer["pets"].append(new_pet)    
 
 
 
