@@ -44,3 +44,8 @@ def find_pet_by_name(list, pet_name):
 
 # Test 12: remove pet by name
 
+def remove_pet_by_name(list, pet_name):
+    for pet in list["pets"]:
+        if pet["name"] == pet_name:
+            list["pets"].remove(pet)
+
