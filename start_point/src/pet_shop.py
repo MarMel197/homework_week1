@@ -10,10 +10,9 @@ def get_total_cash(list):
 
 # Test 3 and 4: Add or remove cash 
 # def add_or_remove_cash(list, cash):
-#     total_cash = list["admin"]["total_cash"]
-#     total_cash += cash
-#     list["admin"]["total_cash"] = total_cash
-
+#     total_cash = list["admin"]["total_cash"] 
+#     print(total_cash)
+    
 # Test 5: Get pets sold
 def get_pets_sold(list):
     return list["admin"]["pets_sold"]
@@ -28,7 +27,6 @@ def increase_pets_sold(list, sale):
 def get_stock_count(list):
     return len(list["pets"])
 
-# Test 8 & 9 : Get pets by breed
 def get_pets_by_breed(list, breed):
     breed_list = []
     for pet in list["pets"]:
@@ -39,7 +37,7 @@ def get_pets_by_breed(list, breed):
 
 # Test 10 & 11: Find pet by name
 
-def find_pet_by_name(list, pet_name):
-    for name in list["pets"]:
-        if name["name"] == pet_name:
-            return pet_name
+#  def find_pet_by_name(list, pet_name):
+#     for name in list["pets"]["name"]:
+#         if name["pets"]["name"] == pet_name:
+#             return pet_name
