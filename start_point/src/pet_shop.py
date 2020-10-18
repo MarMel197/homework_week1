@@ -59,6 +59,17 @@ def add_pet_to_stock(list, new_pet):
 def get_customer_cash(list):
     return list["cash"]
 
-    
+# Test 14: Remove customer cash
+def remove_customer_cash(list, cash_sale):
+    cust_cash = list["cash"]
+    cust_cash -= cash_sale
+    list["cash"] = cust_cash
+
+#Test 15: Get customer pet count
+
+
+
+
+
 
 
