@@ -42,10 +42,18 @@ def find_pet_by_name(list, pet_name):
         if name["name"] == pet_name:
             return name
 
-# Test 12: remove pet by name
+# Test 12: Remove pet by name
 
 def remove_pet_by_name(list, pet_name):
     for pet in list["pets"]:
         if pet["name"] == pet_name:
             list["pets"].remove(pet)
+
+# Test 12: Add pet to stock
+
+def add_pet_to_stock(list, new_pet):
+    list["pets"].append(new_pet)
+
+# Test 13: Get cutomer cash
+
 
