@@ -9,9 +9,10 @@ def get_total_cash(list):
     return list["admin"]["total_cash"]
 
 # Test 3 and 4: Add or remove cash 
-# def add_or_remove_cash(list, cash):
-#     total_cash = list["admin"]["total_cash"] 
-#     print(total_cash)
+def add_or_remove_cash(list, cash):
+    list["admin"]["total_cash"] += cash
+    return list["admin"]["total_cash"]
+    
     
 # Test 5: Get pets sold
 def get_pets_sold(list):
@@ -60,12 +61,23 @@ def get_customer_cash(list):
     return list["cash"]
 
 # Test 14: Remove customer cash
+
 def remove_customer_cash(list, cash_sale):
     cust_cash = list["cash"]
     cust_cash -= cash_sale
     list["cash"] = cust_cash
 
 #Test 15: Get customer pet count
+
+def get_customer_pet_count(list, customer):
+    pet_count = list[customer]["pets"]
+    return pet_count
+
+# Test 16: Add pet to customer
+
+def add_pet_to_customer(list, customer, pet):
+    list[customer]["pets"].append(pet)
+    
 
 
 
