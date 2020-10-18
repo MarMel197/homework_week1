@@ -56,4 +56,7 @@ def add_pet_to_stock(list, new_pet):
 
 # Test 13: Get cutomer cash
 
+def get_customer_cash(list, cust_cash):
+    return(list["cash"])
+    
 
